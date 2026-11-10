@@ -71,3 +71,36 @@ O GitHub será usado para versionamento. A hospedagem do frontend e o backend se
 - Política de retenção e limites de uso de IA.
 - Regras definitivas do algoritmo de revisão espaçada.
 - Licenciamento e origem do banco de questões.
+
+
+## 8. Prioridade do MVP: edital + questões com IA
+**Posicionamento:** Fichário — Estude com inteligência. Evolua com estratégia.
+
+### Fluxo do edital
+1. O estudante cadastra um concurso/prova e envia o PDF.
+2. O arquivo fica em armazenamento privado, vinculado ao proprietário.
+3. O backend valida formato/tamanho e extrai texto, preservando páginas/trechos quando possível.
+4. A IA propõe disciplinas, tópicos e sub tópicos exclusivamente com base no conteúdo fornecido, mantendo referências ao documento e indicando incertezas.
+5. O estudante revisa, edita e confirma a estrutura antes de ela ser usada como plano.
+
+### Fluxo de questões
+1. Questões existentes entram com origem, banca, ano, fonte e direitos de uso registrados quando disponíveis.
+2. Questões inéditas podem ser geradas por IA a partir de tópicos confirmados e materiais autorizados.
+3. Questões de IA são rotuladas como inéditas/assistidas por IA.
+4. Gabaritos e explicações automáticos ficam como não validados até revisão adequada; nunca são apresentados como oficiais sem comprovação.
+5. Tentativas alimentam caderno de erros e recomendações de revisão.
+
+### Modelo de dados adicional
+- notice_extractions: execução, versão, estado e erros da extração.
+- notice_items: itens extraídos, hierarquia, página/trecho, confiança e estado de conferência.
+- question_topic_links: relação entre questões e tópicos confirmados.
+- question_sources: origem, referência, banca, ano e licença/condição de uso, quando aplicável.
+- ai_generations: finalidade, modelo, resultado, consumo e estado de validação.
+
+### Segurança e qualidade
+- PDFs em buckets privados, com URLs assinadas e temporárias.
+- Nunca expor chaves privadas no frontend.
+- Não inventar conteúdo ausente do edital; incertezas devem ser exibidas.
+- Permitir correção manual da extração e denúncia de questões/gabaritos incorretos.
+- Respeitar direitos autorais; não redistribuir questões ou materiais protegidos sem autorização.
+- Planejar OCR para PDFs digitalizados e tratamento de falhas/reprocessamento.
