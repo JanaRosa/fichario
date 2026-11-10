@@ -60,3 +60,21 @@ Validar visualmente o protótipo e, em seguida, configurar o Supabase com autent
 
 ### Próxima etapa
 Implementar upload privado, extração de PDF e tela de conferência; depois, o primeiro fluxo de questões.
+
+
+## 2026-11-10 — Biblioteca de provas e editais adicionada ao escopo
+### Referência analisada
+- PCI Concursos: catálogo de provas para download com navegação por cargos e pesquisa por cidades, órgãos e instituições.
+- A referência será usada apenas para orientar a experiência de busca e organização, sem copiar identidade visual ou presumir permissão para reutilizar arquivos.
+
+### Decisões
+- Criar Biblioteca de Provas e Editais no Fichário.
+- Filtros: cargo, concurso, órgão, banca, ano, escolaridade, estado, município e disciplina.
+- Tipos: edital, retificação, prova, gabarito e padrão de resposta.
+- Permitir cadastro administrativo e contribuição de documentos por usuários.
+- Contribuições ficam pendentes até revisão.
+- Registrar origem e situação de direitos/permissão; priorizar fontes oficiais e links quando hospedagem não for autorizada.
+- Editais aprovados poderão alimentar o importador e provas autorizadas poderão alimentar questões e simulados.
+
+### Próxima etapa
+Desenhar e implementar o catálogo da Biblioteca e o fluxo administrativo de cadastro de documentos.
