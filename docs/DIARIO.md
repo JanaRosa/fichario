@@ -34,3 +34,29 @@ Nenhuma chave de API ou segredo deve ser incluído no repositório.
 
 ### Próxima etapa
 Validar visualmente o protótipo e, em seguida, configurar o Supabase com autenticação e políticas de acesso.
+
+
+## 2026-11-10 — Posicionamento e prioridade do MVP definidos
+### Decisões
+- Marca: **Fichário — Estude com inteligência. Evolua com estratégia.**
+- Começar para uso pessoal, com arquitetura preparada para múltiplos estudantes.
+- IA desde o início, com chamadas protegidas no servidor.
+- Primeira prioridade: importação de edital em PDF integrada ao banco de questões com IA.
+
+### Fluxo aprovado
+1. Envio privado do edital.
+2. Extração de texto e referências de página.
+3. Proposta de disciplinas, tópicos e sub tópicos por IA.
+4. Conferência e correção pelo estudante.
+5. Questões com origem identificada ou questões inéditas claramente rotuladas como IA.
+6. Resolução, explicações, registro de erros e recomendações de revisão.
+
+### Regras de confiabilidade
+- Não inventar conteúdo ausente do edital.
+- Conferência humana obrigatória antes de confirmar a estrutura extraída.
+- Questões geradas por IA não são questões oficiais.
+- Gabaritos automáticos precisam de validação.
+- Respeitar direitos autorais e proteger documentos enviados.
+
+### Próxima etapa
+Implementar upload privado, extração de PDF e tela de conferência; depois, o primeiro fluxo de questões.
