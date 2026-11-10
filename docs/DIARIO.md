@@ -16,3 +16,21 @@
 
 ### Observações
 Nenhuma chave de API ou segredo deve ser incluído no repositório.
+
+## 2026-11-10 — Primeira estrutura do aplicativo
+### Implementado
+- Estrutura inicial React + Vite.
+- Primeiro painel responsivo com navegação lateral.
+- Indicadores em estado vazio, sem inventar dados de desempenho.
+- Atalhos para concursos, questões, caderno de erros e flashcards.
+- Documentação inicial de arquitetura, roadmap e backlog.
+
+### Não implementado ainda
+- Persistência real de dados.
+- Autenticação.
+- Integração de IA.
+- Cadastro e resolução funcional de questões.
+- Testes automatizados e publicação.
+
+### Próxima etapa
+Validar visualmente o protótipo e, em seguida, configurar o Supabase com autenticação e políticas de acesso.
