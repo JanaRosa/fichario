@@ -104,3 +104,53 @@ O GitHub será usado para versionamento. A hospedagem do frontend e o backend se
 - Permitir correção manual da extração e denúncia de questões/gabaritos incorretos.
 - Respeitar direitos autorais; não redistribuir questões ou materiais protegidos sem autorização.
 - Planejar OCR para PDFs digitalizados e tratamento de falhas/reprocessamento.
+
+
+## 10. Biblioteca de provas e editais
+A Biblioteca será um módulo central do produto, com catálogo pesquisável e documentos associados a concursos/provas.
+
+### Organização e filtros
+- cargo/função;
+- concurso/processo seletivo;
+- órgão/instituição;
+- banca organizadora;
+- ano/edição;
+- escolaridade;
+- estado e município;
+- disciplina/área.
+
+### Tipos de documento
+- edital e retificações;
+- caderno de prova;
+- gabarito preliminar e definitivo;
+- padrão de resposta/espelho de correção, quando houver;
+- material complementar com fonte identificada.
+
+### Cadastro e contribuição
+- Área administrativa para cadastrar e revisar registros.
+- Formulário de contribuição para envio de documentos por estudantes.
+- Documentos enviados por usuários entram como pendentes e não ficam públicos antes da revisão.
+- Metadados obrigatórios: tipo, concurso, cargo quando aplicável, ano, órgão, banca quando conhecida, origem/URL, responsável pelo envio e situação de direitos/permissão.
+- Permitir link para fonte oficial quando o arquivo não puder ser hospedado.
+
+### Integração com o estudo
+- A partir de um registro da biblioteca, o estudante pode abrir/baixar documento quando autorizado.
+- Editais podem iniciar o fluxo de extração, conferência e criação do plano de estudos.
+- Provas podem ser vinculadas a questões, disciplinas e simulados quando houver base legal e dados estruturados.
+- Gabaritos devem indicar se são preliminares ou definitivos e sua fonte.
+
+### Direitos, integridade e moderação
+- Não copiar ou fazer scraping de arquivos de terceiros sem autorização.
+- Priorizar links para páginas oficiais de bancas e órgãos, documentos em domínio público ou materiais com licença/permissão adequada.
+- Guardar proveniência e condições de uso por documento.
+- Disponibilizar mecanismo de denúncia/retirada e revisão de contribuições.
+- Validar arquivos enviados, limitar tamanho/tipo e armazenar em bucket privado até aprovação.
+
+### Modelo de dados adicional
+- organizations: órgãos e instituições;
+- organizers: bancas organizadoras;
+- job_positions: cargos/funções;
+- exams: concursos e processos seletivos;
+- exam_documents: documentos, tipo, ano, origem, URL, armazenamento e situação de direitos;
+- document_contributions: envios de usuários, estado de revisão e decisões de moderação;
+- document_tags: relações com disciplinas e assuntos.
