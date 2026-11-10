@@ -2,6 +2,20 @@
 
 **Posicionamento:** Estude com inteligência. Evolua com estratégia.
 
+## Prioridade P0 — Biblioteca de provas e editais
+
+| ID | Item | Critério de aceite |
+|---|---|---|
+| FIC-027 | Catálogo de concursos | Listar concursos por órgão e edição |
+| FIC-028 | Catálogo de cargos | Pesquisar e filtrar por cargo/função |
+| FIC-029 | Cadastro de bancas e órgãos | Manter cadastro normalizado de organizadoras e instituições |
+| FIC-030 | Busca avançada da biblioteca | Filtrar por cargo, concurso, órgão, banca, ano, escolaridade, estado, município e disciplina |
+| FIC-031 | Cadastro de documentos | Associar edital, retificação, prova, gabarito e padrão de resposta ao concurso |
+| FIC-032 | Proveniência e permissão | Registrar fonte/URL e situação de direitos/uso de cada arquivo |
+| FIC-033 | Administração da biblioteca | Cadastrar, editar, revisar e publicar documentos |
+| FIC-034 | Contribuição de usuários | Receber arquivos em fila pendente, sem publicação automática |
+| FIC-035 | Integração com estudo | Usar edital aprovado no importador e prova autorizada em questões/simulados |
+
 ## Prioridade P0 — Fluxo principal do MVP
 
 | ID | Item | Critério de aceite |
@@ -46,3 +60,7 @@
 - Preservar referência ao edital e permitir conferência humana da extração.
 - Não inventar itens ausentes do documento.
 - Proteger arquivos e segredos no backend; nunca colocar chaves privadas no frontend ou no repositório.
+
+
+## Regra específica da biblioteca
+Não copiar ou fazer scraping de arquivos de terceiros sem autorização. Priorizar fontes oficiais, domínio público ou materiais com licença/permissão adequada. Quando não for possível hospedar o documento, registrar e oferecer o link para a fonte oficial. Contribuições de usuários devem passar por revisão antes da publicação.
