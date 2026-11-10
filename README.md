@@ -7,6 +7,9 @@ Plataforma inteligente de preparação para concursos, provas e certificações.
 ## Objetivo
 Transformar a rotina de preparação em um ciclo orientado por desempenho: estudar, responder, entender os erros, revisar e acompanhar a evolução.
 
+## Biblioteca de provas e editais
+Biblioteca pesquisável inspirada em catálogos de provas, com filtros por cargo, concurso, órgão, banca, ano, escolaridade, estado, município e disciplina. Cada registro pode reunir edital, caderno de prova, gabarito e retificações, com origem e permissões de uso identificadas. Documentos podem ser cadastrados pela administração ou enviados por estudantes para revisão antes da publicação.
+
 ## Primeira prioridade: edital + questões com IA
 1. Enviar edital em PDF.
 2. Extrair disciplinas, tópicos e sub tópicos, preservando páginas e trechos de referência quando possível.
